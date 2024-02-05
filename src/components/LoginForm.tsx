@@ -3,7 +3,12 @@ import { FaUser, FaLock  } from "react-icons/fa";
 
 
 interface LoginFormProps {
-  timer: number 
+  timer: number,
+  elements: React.ReactNode,
+}
+
+function randomFunction<T>(value: T): T[] {
+  return [value]
 }
 
 const LoginForm: React.FC<LoginFormProps> = ({timer}): any => {
